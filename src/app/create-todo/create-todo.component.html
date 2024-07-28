@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-header"> Create Todo </div>
+    <div class="card-body"> 
+        <form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+            <div class="form-group mt-2">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" formControlName="name">
+            </div>
+
+            <div class="formGroup mt-2">
+                <label for="date">Date</label>
+                <input type="text" id="date" class="form-control" formControlName="date">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-2">Create Todo</button>
+        </form>
+    </div>
+</div>
